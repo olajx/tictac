@@ -141,6 +141,10 @@ def multiGame():
 def endGame():
     play_again = input("Would you like to play again? (y/n): ")
     if play_again == "y": 
+        board = [" ", " ", " ",                 
+         " ", " ", " ",                 
+         " ", " ", " "]    
+        global board
         players()
         show()
          
