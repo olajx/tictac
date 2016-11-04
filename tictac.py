@@ -7,20 +7,23 @@ computer_character = None
 
 
 def welcome():
-    print("\u001B[ 35m""Welcome to Tic-Tac-Toe game." "\u001B[0m")
-
+    print()
+    print("\u001B[35m""Welcome to Tic-Tac-Toe game." "\u001B[0m")
+    print()
 
 def players():
     global player_character
     global computer_character
 
     player = input(
-        "\u001B[ 33m" "Press 1 or 2 to choose single/multiplayer mode (or press any key to exit):""\u001B[0m")
+        "\u001B[33m" "Press 1 or 2 to choose single/multiplayer mode (or press any key to exit):""\u001B[0m")
+    print()
     if player not in ["1", "2"]:
         sys.exit()
     player = int(player)
 
     player_character = input("\u001b[41m""Choose a character (X or O): ""\u001B[0m")
+    print()
     while player_character.upper() not in ["X", "O"]:
         print("type X or O")
         player_character = input("Choose a character (X or O): ")
