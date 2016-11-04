@@ -107,8 +107,10 @@ def fullCheck(character):
         if board[i] != " ":
             num_filled = num_filled + 1
     if num_filled == 9:
-        print("it's a tie")
+        print("it's a tie. Game over.")
         endGame()
+
+spotlist = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 
 def game():
